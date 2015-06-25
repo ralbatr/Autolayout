@@ -8,7 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
+    @IBOutlet weak var userNameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var passwordLabel: UILabel!
+    
+    @IBAction func toggleSecure(sender: UIButton) {
+        
+        secure = !secure
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
+    }
+    
+    var secure = false {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    private func updateUI() {
+        passwordField.secureTextEntry = secure
+        passwordLabel.text = secure ? "Secure password" :"password"
+    }
 }
 

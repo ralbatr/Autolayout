@@ -44,6 +44,9 @@
                                 <state key="normal" title="使用安全输入">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="toggleSecure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8eT-BW-Bf4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvV-5C-G1S">
                                 <rect key="frame" x="320" y="96" width="89" height="30"/>
@@ -146,6 +149,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="YEg-AY-h4d" id="QuG-Lj-5bh"/>
+                        <outlet property="passwordLabel" destination="4DJ-OL-1wI" id="gAA-x7-QDe"/>
+                        <outlet property="userNameField" destination="aVK-vG-lNF" id="Wco-Hn-0K9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
