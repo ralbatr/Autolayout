@@ -15,6 +15,9 @@ class ViewController: UIViewController
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var passwordLabel: UILabel!
     
+    @IBAction func login() {
+        
+    }
     @IBAction func toggleSecure(sender: UIButton) {
         
         secure = !secure
